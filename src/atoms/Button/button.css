@@ -1,0 +1,55 @@
+.Button {
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.sidebarButtonStyle {
+    color: var(--colorGray6);
+
+    width: 100%;
+    height: 100%;
+
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.sidebarButtonStyle:hover {
+    color: var(--colorWhite);
+}
+
+.toggleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: max-content;
+    height: max-content;
+}
+
+.createGroupSubmitButton {
+    background: var(--color6);
+    color: var(--colorWhite);
+
+    width: 50%;
+    height: 35px;
+
+    border-radius: var(--borderRadius3);
+    box-shadow: var(--shadow3);
+
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.createGroupSubmitButton:hover {
+    background: var(--color1);
+    color: var(--color6);
+}

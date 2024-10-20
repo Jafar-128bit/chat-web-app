@@ -1,0 +1,58 @@
+.createSectionMenu {
+    background: var(--colorWhite);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+
+    width: calc(620px - 50px);
+    height: calc(320px - 50px);
+
+    padding: 25px;
+
+    border-radius: var(--borderRadius4);
+    box-shadow: var(--shadow2);
+
+    overflow: hidden;
+}
+
+.createSectionMenu__section1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: max-content;
+}
+
+.createSectionMenu__section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+    height: max-content;
+}
+
+.createSectionMenu__section2-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+    height: max-content;
+}
+
+.createSectionMenu__section3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: max-content;
+}

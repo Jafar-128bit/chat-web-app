@@ -1,0 +1,21 @@
+.iconButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: max-content;
+    height: max-content;
+
+    position: relative;
+}
+
+.sidebarIconStyle {
+    width: 75px;
+    height: 75px;
+
+    border-radius: var(--borderRadius3);
+}
+
+.sidebarIconStyle:hover {
+    background: var(--colorGray3);
+}

@@ -1,0 +1,33 @@
+.toggle {
+    background: var(--colorGray8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 30px;
+
+    border-radius: calc(30px / 2);
+    box-shadow: var(--shadow3);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.toggleSwitch {
+    background: var(--color6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+    box-shadow: var(--shadow2);
+
+    position: absolute;
+    left: 1px;
+}
