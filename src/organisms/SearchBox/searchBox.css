@@ -1,0 +1,26 @@
+.searchBox {
+    background: var(--color1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: calc(80% - 10px);
+    height: calc(50px - 10px);
+
+    padding: 5px;
+
+    border-radius: var(--borderRadius7);
+    box-shadow: var(--shadow6);
+}
+
+.searchBox__iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    width: 40px;
+    height: 40px;
+}

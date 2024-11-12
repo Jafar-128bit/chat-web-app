@@ -10,13 +10,15 @@ const InputField = ({
                         onChangeCallback,
                         blurCallback,
                         inputFieldStyle,
+                        inputContainerStyle,
                         placeholder,
                         showError,
                         errorMessage
                     }: InputFieldType) => {
-    return <div className={`inputField ${inputFieldStyle}`}>
+    return <div className={`inputField ${inputContainerStyle}`}>
         {labelText !== null && <label htmlFor={name}>{labelText}</label>}
         <input
+            className={inputFieldStyle}
             type={inputType}
             id={name}
             name={name}

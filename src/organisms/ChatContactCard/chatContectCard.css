@@ -1,0 +1,116 @@
+.chatContactCard {
+    background: var(--colorWhite);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-shrink: 0;
+    gap: 10px;
+
+    width: calc(100% - 10px);
+    height: calc(100px - 10px);
+
+    padding: 5px;
+
+    border-radius: var(--borderRadius5);
+    overflow: hidden;
+    cursor: default;
+}
+
+.chatContactCard:hover {
+    transition: all 0.15s ease-in-out;
+    background: var(--colorGray8);
+}
+
+.chatContactCard__section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+}
+
+.chatContactCard__section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: calc(100% - 100px);
+    height: 100%;
+}
+
+.chatContactCard__titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 50%;
+}
+
+.chatContactCard__Username {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 70%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.chatContactCard__messageTime {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 30%;
+    height: 100%;
+}
+
+.chatContactCard__chatInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 100%;
+    height: 50%;
+}
+
+.chatContactCard__lastMessageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chatContactCard__chatIndicatorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+
+    width: 40%;
+    height: 100%;
+}
+
+.chatContactCard__badge {
+    background: var(--color3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+}

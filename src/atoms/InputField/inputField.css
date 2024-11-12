@@ -10,24 +10,18 @@
     position: relative;
 }
 
+.searchBoxInputContainer {
+    width: calc(100% - 40px);
+}
+
 .inputField > input[type="text"] {
-    flex: 2;
-
-    width: auto;
-    height: calc(22px - 10px);
-
     padding: 5px;
     margin: 0;
 
-    border: none;
-    border-bottom: 2px solid var(--colorGray6);
     outline: none;
-
-    font-size: 16px;
-    font-weight: 500;
 }
 
-.inputField > input[type="text"]::placeholder {
+.inputField > input::placeholder {
     color: var(--colorGray6);
 }
 
@@ -39,4 +33,34 @@
 
     font-size: 16px;
     font-weight: 300;
+}
+
+.sectionInput {
+    flex: 2;
+
+    width: auto;
+    height: calc(22px - 10px);
+
+    border: none;
+    border-bottom: 2px solid var(--colorGray6);
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchInput {
+    background: transparent;
+
+    width: 100%;
+    height: max-content;
+
+    border: none;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.searchBoxInputContainer > input::placeholder {
+    color: var(--colorGray4);
+    font-weight: 500;
 }

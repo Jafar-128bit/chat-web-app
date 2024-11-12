@@ -7,8 +7,6 @@ import {FormikErrors, FormikTouched} from "formik";
 
 type Prop = {
     handleStopPropagation: (e: React.MouseEvent) => void;
-    handleToggle: () => void;
-    toggleValue: boolean;
     values: SectionDataType;
     handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
     handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
@@ -19,8 +17,6 @@ type Prop = {
 
 const CreateSectionMenu = ({
                              handleStopPropagation,
-                             handleToggle,
-                             toggleValue,
                              handleChange,
                              blur,
                              handleSubmit,
@@ -50,8 +46,8 @@ const CreateSectionMenu = ({
                 blurCallback={blur}
                 onChangeCallback={handleChange}
                 inputValue={values.sectionName}
-                inputFieldStyle=""
-                placeholder="Your group name"
+                inputFieldStyle="sectionInput"
+                placeholder="Example : Office Chat"
                 showError={touched.sectionName && errors.sectionName}
                 errorMessage={errors.sectionName ? errors.sectionName : ""}
             />
@@ -62,30 +58,11 @@ const CreateSectionMenu = ({
                 blurCallback={blur}
                 onChangeCallback={handleChange}
                 inputValue={values.description}
-                inputFieldStyle=""
-                placeholder="Describe your group"
+                inputFieldStyle="sectionInput"
+                placeholder="Describe your section"
                 showError={touched.description && errors.description}
                 errorMessage={errors.description ? errors.description : ""}
             />
-            <div className="createSectionMenu__section2-1">
-                <PText propData={{
-                    fontSize: 16,
-                    fontWeight: 300,
-                    color: "var(--colorBlack)"
-                }}>
-                    Section Status
-                </PText>
-                <Button
-                    propData={{
-                        innerButtonText: null,
-                        buttonType: "button",
-                        buttonStyleName: "toggleButton"
-                    }}
-                    onClickFunction={handleToggle}
-                >
-                    {<Toggle toggleValue={toggleValue}/>}
-                </Button>
-            </div>
         </section>
         <section className="createSectionMenu__section3">
             <Button propData={{

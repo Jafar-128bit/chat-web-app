@@ -1,0 +1,15 @@
+.profileImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.profileImageContainer > img {
+    width: 100%;
+    height: max-content;
+
+    object-fit: cover;
+    object-position: center;
+}

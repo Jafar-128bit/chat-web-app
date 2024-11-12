@@ -9,19 +9,18 @@ import {useDispatch} from "react-redux";
 
 const validationSchema = Yup.object().shape({
     sectionName: Yup.string()
-        .required('Group name is required')
-        .min(4, 'Group name must be at least 4 characters')
-        .max(80, 'Group name must not be more than 80 characters'),
+        .required('Section name is required')
+        .min(4, 'Section name must be at least 4 characters')
+        .max(80, 'Section name must not be more than 80 characters'),
     description: Yup.string()
         .max(255, 'Description must not be more than 255 characters'),
     isPrivate: Yup.boolean()
 
 });
 
-const initialGroupData: SectionDataType = {
+const initialSectionData: SectionDataType = {
     sectionName: "",
     description: "",
-    isPrivate: false,
 }
 
 const CreateSectionTemplate = () => {
@@ -31,12 +30,6 @@ const CreateSectionTemplate = () => {
     };
 
     const [loading, setLoading] = useState<boolean>(false);
-    const [toggle, setToggle] = useState<boolean>(false);
-
-    const handleToggle = (): void => {
-        setToggle(!toggle);
-        formik.setFieldValue('isPrivate', !formik.values.isPrivate);
-    };
 
     const handleSubmit = (values: SectionDataType, {setSubmitting}: FormikHelpers<SectionDataType>) => {
         setLoading(true);
@@ -45,7 +38,6 @@ const CreateSectionTemplate = () => {
         sectionInfoData.push({
             sectionName: values.sectionName,
             description: values.description,
-            isPrivate: values.isPrivate,
             unreadMessage: 0,
         });
         setSubmitting(false);
@@ -54,7 +46,7 @@ const CreateSectionTemplate = () => {
     };
 
     const formik = useFormik({
-        initialValues: initialGroupData,
+        initialValues: initialSectionData,
         validationSchema: validationSchema,
         onSubmit: handleSubmit,
     });
@@ -62,8 +54,6 @@ const CreateSectionTemplate = () => {
     return <>
         <CreateSectionMenu
             handleStopPropagation={stopPropagation}
-            handleToggle={handleToggle}
-            toggleValue={toggle}
             handleChange={formik.handleChange}
             handleSubmit={formik.handleSubmit}
             values={formik.values}

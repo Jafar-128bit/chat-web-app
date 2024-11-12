@@ -1,0 +1,25 @@
+.textArea {
+    width: max-content;
+    height: max-content;
+    min-height: 20px;
+    max-height: 200px;
+
+    border: none;
+    outline: none;
+    resize: none;
+
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.chatInputTextArea {
+    background-color: var(--colorGray8);
+
+    width: calc(100% - 10px);
+    height: auto;
+
+    padding: 5px;
+    margin: 0;
+
+    font-size: 16px;
+}

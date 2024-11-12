@@ -1,0 +1,22 @@
+.attachmentMenu {
+    background: var(--colorWhite);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+
+    width: calc(160px - 10px);
+    height: max-content;
+
+    padding: 5px;
+
+    border-radius: var(--borderRadius3);
+    box-shadow: var(--shadow3);
+
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    bottom: 75px;
+}

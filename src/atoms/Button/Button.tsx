@@ -1,7 +1,7 @@
 import './button.css';
-import {ButtonProp} from "../../types/types";
+import {ButtonType} from "../../types/types";
 
-const Button = ({propData, children, onClickFunction}: ButtonProp) => {
+const Button = ({propData, children, onClickFunction}: ButtonType) => {
     return <button
         type={propData.buttonType}
         className={`Button ${propData.buttonStyleName}`}

@@ -13,7 +13,7 @@
     --colorGray7: #ededed;
     --colorGray8: #f5f5f5;
 
-    --color1: #F2D95C;
+    --color1: #efe1b4;
     --color2: #F2B84B;
     --color3: #F28E13;
     --color4: #F5681C;
@@ -23,6 +23,9 @@
     /* Background Gradients */
     --backgroundBlack1: rgba(0, 0, 0, 0.50);
     --backgroundWhite1: rgba(173, 173, 173, 0.5);
+    --background1: linear-gradient(90.4deg, rgb(248, 52, 246) 0.6%, rgb(152, 38, 252) 90%);
+    --background2: linear-gradient(103.3deg, rgb(190, 11, 215) -18.7%, rgb(246, 234, 11) 90.9%);
+    --background3: radial-gradient(circle at 10% 20%, rgb(255, 197, 61) 0%, rgb(255, 94, 7) 90%);
 
     /* Component Effects */
     --blurLevel5p: 5px;
@@ -35,7 +38,7 @@
     --shadow3: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     --shadow4: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     --shadow5: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    --shadow6: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    --shadow6: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
     /* Component Sizes */
     --sidebarWidth: 110px;
@@ -64,6 +67,7 @@
     height: 100vh;
 
     position: relative;
+    z-index: 0;
 }
 
 .app__pageContainer {
@@ -71,11 +75,9 @@
     align-items: center;
     justify-content: center;
 
-    width: calc(100% - var(--sidebarWidth) - 20px);
-    height: calc(100% - 20px);
-
-    padding: 10px;
-    overflow: hidden;
+    width: calc(100% - var(--sidebarWidth));
+    height: 100%;
+    z-index: 0;
 }
 
 .noScroll::-webkit-scrollbar {
